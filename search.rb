@@ -1,3 +1,4 @@
 require "toolbox"
+require "launchy"
 
-puts "Hello, world!"
+Launchy.open("https://www.google.co.jp/")
