@@ -1,6 +1,6 @@
 SRC2URL = [
-  {src: "C:/Users/ongaeshi/Code/runa_app/toolbox", url: "https://github.com/ongaeshi/toolbox"},
-  {src: "C:/Users/ongaeshi/Code/runa", url: "https://github.com/ongaeshi/runa"},
+  {src: "C:/Users/ongaeshi/Code/runa_app/toolbox", url: "https://github.com/ongaeshi/toolbox/blob/master"},
+  {src: "C:/Users/ongaeshi/Code/runa", url: "https://github.com/ongaeshi/runa/blob/master"},
 ]
 
 require "clipboard"
@@ -15,6 +15,9 @@ SRC2URL.each do |d|
 
   if input.match?(src + "/")
     relative_path = input.gsub(src + "/", "")
-    Launchy.open("#{url}/blob/master/#{relative_path}")
+    Launchy.open("#{url}/#{relative_path}")
   end
+
+  # https://github.com/ongaeshi/toolbox/blob/master/search.rb
+  # explorer /select,C:\Users\ongaeshi\Code\runa_app\toolbox\search.rb
 end
