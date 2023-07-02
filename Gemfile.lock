@@ -3,6 +3,7 @@ GEM
   specs:
     addressable (2.8.4)
       public_suffix (>= 2.0.2, < 6.0)
+    clipboard (1.3.6)
     launchy (2.5.2)
       addressable (~> 2.8)
     public_suffix (5.0.1)
@@ -11,6 +12,7 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  clipboard (~> 1.3)
   launchy (~> 2.5)
 
 BUNDLED WITH
